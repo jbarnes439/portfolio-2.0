@@ -1,0 +1,40 @@
+
+.footer {
+    margin-top: auto;
+    bottom: 0;
+    width: 100%;
+    color: black;
+    font-size: 3vh;
+    background: linear-gradient(transparent, grey);
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    transition: all .5s;
+}
+
+.footer-content {
+    width: 100%;
+}
+
+.footer img {
+    height: 50px;
+    width: 50px;
+}
+
+.footer__icon:hover {
+    cursor: pointer;
+    transform: scale(1.1);
+    transition: all 0.2s ease-in-out;
+}
+
+.email-link {
+    color: white;
+    text-decoration: none;
+    transition: all 0.2s ease-in-out;
+}
+
+.email-link:hover {
+    color: rgb(118, 118, 121);
+    transform: scale(1.1);
+}

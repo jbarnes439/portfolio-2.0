@@ -1,0 +1,20 @@
+.education-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.education-section {
+    width: 80%;
+    height: 20vh;
+    background-color: rgb(128, 128, 128, 0.5);
+    margin: 1rem 0;
+    padding-bottom: 1rem;
+    border-radius: 3px;
+    background: radial-gradient(rgb(84, 84, 85), transparent 50%);
+}
+
+.education-title {
+    margin-bottom: 0.25rem;
+    font-weight: 300;
+}

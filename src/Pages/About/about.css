@@ -1,0 +1,17 @@
+.about-container {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.about-image {
+    filter: grayscale(100%);
+    width: 80%;
+    height: auto;
+    align-self: center;
+}
+
+.about-section {
+    width: 80%;
+    align-self: center;
+}

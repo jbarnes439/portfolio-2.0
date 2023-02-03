@@ -1,0 +1,16 @@
+.header-container {
+    width: 100%;
+}
+
+.header-title {
+    font-weight: 200;
+}
+
+.header-subtitle {
+    font-weight: 150;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
