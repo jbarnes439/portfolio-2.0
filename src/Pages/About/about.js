@@ -7,7 +7,6 @@ export default function About() {
     return (
         <div className={'about-container'}>
             <Header />
-            <h3>About</h3>
             <img src={desertImage} alt='desert landscape' className={'about-image'} />
             <div className={'about-section'}>
                 <p>

@@ -8,7 +8,6 @@ export default function Contact() {
     return (
         <div className={'contact-container'}>
             <Header />
-            <h3>Contact</h3>
             <Form />
             <Footer />
         </div>

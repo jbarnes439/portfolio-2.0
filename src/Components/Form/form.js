@@ -48,11 +48,6 @@ export default function Form() {
             name='contact form'
             aria-label='contact form'
         >
-            {sentMessage && !errorMessage &&
-                <span className={'thanks-message'}>
-                    Thank you for reaching out! I will respond to you via email shortly!
-                </span>
-            }
             <label htmlFor='Email' className={'contact-form__label'}>Email</label>
             <input
                 id='email'
@@ -64,7 +59,7 @@ export default function Form() {
                 onChange={(e) => setEmail(e.target.value)}
                 required
                 className={'contact-form__input'}
-            />
+                />
             <label htmlFor='first name' className={'contact-form__label'}>First Name</label>
             <input
                 id='firstname'
@@ -76,7 +71,7 @@ export default function Form() {
                 onChange={(e) => setFirstName(e.target.value)}
                 required
                 className={'contact-form__input'}
-            />
+                />
             <label htmlFor='last name' className={'contact-form__label'}>Last Name</label>
             <input
                 id='lastname'
@@ -88,7 +83,7 @@ export default function Form() {
                 onChange={(e) => setLastName(e.target.value)}
                 required
                 className={'contact-form__input'}
-            />
+                />
             <label htmlFor='message' className={'contact-form__label'}>Message</label>
             <textarea
                 id='message'
@@ -100,14 +95,19 @@ export default function Form() {
                 onChange={(e) => setUserMessage(e.target.value)}
                 required
                 className={'contact-form__textarea'}
-            />
+                />
             <button
                 className={'contact-form__button'}
                 aria-label='submit'
                 onClick={sendEmail}
-            >
+                >
                 Submit
             </button>
+            {sentMessage && !errorMessage &&
+                <span className={'thanks-message'}>
+                    Thank you for reaching out! I will respond to you via email shortly!
+                </span>
+            }
             {errorMessage &&
                 <span className={'error-message'}>{errorMessage}</span>
             }
